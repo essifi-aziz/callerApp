@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".Accueil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_background"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/tvuser_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What would you like to do?"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnajout_acc"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Add New Contact"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary"
+        app:icon="@drawable/baseline_add_ic_call_24"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp" />
+
+    <Button
+        android:id="@+id/btnaff_acc"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="View Contacts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondary"
+        app:icon="@drawable/baseline_account_circle_24"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp" />
+
+    <Button
+        android:id="@+id/btndec_acc"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Sign Out"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="@color/error"
+        android:textColor="@color/error" />
+
+</LinearLayout>
